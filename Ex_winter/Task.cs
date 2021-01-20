@@ -22,6 +22,7 @@ namespace Ex_winter
                 array[index] = value;
             }
         }
+        public string Name { get => "Task " + size; }
         public Task(int N)
         {
             Random rand = new Random();
@@ -64,6 +65,10 @@ namespace Ex_winter
             }
             str += sum;
             return str;
+        }
+        public override string ToString()
+        {
+            return Name;
         }
     }
 }

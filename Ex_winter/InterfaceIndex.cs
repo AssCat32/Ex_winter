@@ -13,6 +13,10 @@ namespace Ex_winter
             get;
             set;
         }
+        string Name
+        {
+            get;
+        }
         string ChetSum(int N);
         string ChetSum();
     }
