@@ -6,8 +6,11 @@ using System.Windows.Forms;
 
 namespace Ex_winter
 {
+    public delegate string myDelegate(int x);
+    public delegate string myDelegate2();
     static class Program
     {
+        
         /// <summary>
         /// Главная точка входа для приложения.
         /// </summary>
