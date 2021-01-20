@@ -15,7 +15,15 @@ namespace Ex_winter
         {
             get
             {
-                return list[index];
+                try
+                {
+                    return list[index];
+                }
+                catch (IndexOutOfRangeException ex)
+                {
+                    Console.WriteLine(ex.Message);
+                    return 0;
+                }
             }
             set
             {
@@ -23,6 +31,7 @@ namespace Ex_winter
             }
         }
         public string Name { get => "SecondTask " + size; }
+        public int Size { get => size; }
         public SecondTask(int N)
         {
             Random rand = new Random();

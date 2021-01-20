@@ -17,6 +17,11 @@ namespace Ex_winter
         {
             get;
         }
+        int Size
+        {
+            get;
+        }
+
         string ChetSum(int N);
         string ChetSum();
     }
