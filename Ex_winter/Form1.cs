@@ -16,5 +16,32 @@ namespace Ex_winter
         {
             InitializeComponent();
         }
+
+        Task task;
+        private void Createbutton_Click(object sender, EventArgs e)
+        {
+            task = new Task();
+
+        }
+
+        private void ChetSumButton_Click(object sender, EventArgs e)
+        {
+            int size = Convert.ToInt32(ReadtextBox.Text);
+            if (size >= 10)
+            {
+                OutputtextBox.Text = task.ChetSum(size);
+                ArraytextBox.Text = task.PrintArray(size);
+            }
+        }
+
+        private void NeChetbutton_Click(object sender, EventArgs e)
+        {
+            int size = Convert.ToInt32(ReadtextBox.Text);
+            if (size >= 10)
+            {
+                OutputtextBox.Text = task.NeChetSum(size);
+                ArraytextBox.Text = task.PrintArray(size);
+            }
+        }
     }
 }
